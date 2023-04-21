@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/academlo-icon-shadow.ico" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/logo_nombre.png" alt="logo_name">
+      <button class="cart__toggle">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!--Panel Carrito de Compras-->
+      <div class="cart__block" id="car">
+        <div id="car__list">
+        </div>
+        <button class="empty__button" id="empty__cart">Empty cart</button>
+      </div>
+    </nav>
+    <header>
+      <img src="./images/logo blanco.png" alt="logo_header">
+    </header>
+    <main>
+      <h3>Todos nuestros productos</h3>
+      <!--Lista de productos-->
+      <div id="products-container" class="principal__container">
+      </div>
+      <!--Modal Contenedor-->
+      <div id="modal-container" class="modal__elements">
+        <div>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-x icon__close__modal"></i>
+        </div>
+        <div id="modal" class="element-modal">
+        </div>
+      </div>
+    </main>
+    <script src="https://kit.fontawesome.com/092155fa28.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
